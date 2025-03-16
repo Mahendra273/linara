@@ -8,6 +8,17 @@ import { ShoppingBag, Menu, X, Search, User } from 'lucide-react'
 import { useCart } from '@/context/CartContext'
 
 export default function Header() {
+  const fetchShopifyData = async () => {
+    const response = await fetch("/api/graphql");
+  
+    const data = await response.json();
+    console.log(data);
+  };
+  
+ useEffect(()=>{
+  fetchShopifyData();
+ },[])
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
@@ -32,12 +43,12 @@ export default function Header() {
     { name: 'Products', path: '/products' },
     { name: 'Collections', path: '/collections' },
     { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' },
+    // { name: 'Contact', path: '/contact' },
   ]
   
   return (
     <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`stikey w-full z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white shadow-md py-3' : 'bg-white/80 backdrop-blur-sm py-5'
       }`}
     >
@@ -54,7 +65,7 @@ export default function Header() {
               key={link.path}
               href={link.path}
               className={`text-sm font-medium transition-colors hover:text-gray-600 ${
-                pathname === link.path ? 'text-primary' : 'text-gray-800'
+                pathname === link.path ? 'text-primary font-bold' : 'text-gray-800'
               }`}
             >
               {link.name}

@@ -29,7 +29,7 @@ export default function ContactPage() {
       setFormData({ name: '', email: '', message: '' })
     }, 1500)
   }
-  
+  return <p className='mx-auto'>Coming Soon</p>
   return (
     <div className="container-custom py-16 animate-fade-in">
       <h1 className="text-3xl font-bold mb-12 text-center">Contact Us</h1>
