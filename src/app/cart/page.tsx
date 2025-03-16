@@ -15,7 +15,7 @@ export default function CartPage() {
         <ShoppingBag className="mx-auto h-16 w-16 text-gray-400" />
         <h2 className="mt-4 text-2xl font-semibold">Your cart is empty</h2>
         <p className="mt-2 text-gray-500">Looks like you haven't added anything to your cart yet.</p>
-        <Link href="/products" className="btn btn-primary mt-8">
+        <Link href="/" className="btn btn-primary mt-8">
           Continue Shopping
         </Link>
       </div>

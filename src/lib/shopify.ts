@@ -125,3 +125,11 @@ export async function getCollection(handle: string): Promise<Collection | null> 
   await new Promise(resolve => setTimeout(resolve, 500))
   return mockCollections.find(collection => collection.handle === handle) || null
 }
+
+
+
+export async function getNewArrivals(): Promise<Product[]> {
+  // Simulate API delay
+  await new Promise(resolve => setTimeout(resolve, 500))
+  return mockProducts.slice(0, 4)
+}

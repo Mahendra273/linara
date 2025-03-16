@@ -9,18 +9,18 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">LINARA</h3>
             <p className="text-gray-300 mb-4">
-              Modern fashion for the contemporary individual. Timeless designs with a focus on quality and sustainability.
+            Luxury reimagined. Timeless fashion, premium craftsmanship, and a lifestyle of sophistication—designed for the modern man.
             </p>
             <div className="flex space-x-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+              <a href="https://instagram.com/linara.in" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
                 <Instagram className="h-5 w-5" />
               </a>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+              {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
                 <Twitter className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
           
@@ -38,9 +38,9 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-2">
               <li><Link href="/about" className="text-gray-300 hover:text-white">About Us</Link></li>
-              <li><Link href="/contact" className="text-gray-300 hover:text-white">Contact</Link></li>
-              <li><Link href="/careers" className="text-gray-300 hover:text-white">Careers</Link></li>
-              <li><Link href="/sustainability" className="text-gray-300 hover:text-white">Sustainability</Link></li>
+              {/* <li><Link href="/contact" className="text-gray-300 hover:text-white">Contact</Link></li> */}
+              {/* <li><Link href="/careers" className="text-gray-300 hover:text-white">Careers</Link></li> */}
+              {/* <li><Link href="/sustainability" className="text-gray-300 hover:text-white">Sustainability</Link></li> */}
             </ul>
           </div>
           
@@ -48,8 +48,8 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Customer Service</h4>
             <ul className="space-y-2">
               <li><Link href="/shipping" className="text-gray-300 hover:text-white">Shipping & Returns</Link></li>
-              <li><Link href="/faq" className="text-gray-300 hover:text-white">FAQ</Link></li>
-              <li><Link href="/size-guide" className="text-gray-300 hover:text-white">Size Guide</Link></li>
+              {/* <li><Link href="/faq" className="text-gray-300 hover:text-white">FAQ</Link></li> */}
+              {/* <li><Link href="/size-guide" className="text-gray-300 hover:text-white">Size Guide</Link></li> */}
               <li><Link href="/privacy-policy" className="text-gray-300 hover:text-white">Privacy Policy</Link></li>
             </ul>
           </div>
@@ -62,7 +62,7 @@ export default function Footer() {
               <ul className="flex space-x-6">
                 <li><Link href="/terms" className="hover:text-white">Terms</Link></li>
                 <li><Link href="/privacy" className="hover:text-white">Privacy</Link></li>
-                <li><Link href="/cookies" className="hover:text-white">Cookies</Link></li>
+                {/* <li><Link href="/cookies" className="hover:text-white">Cookies</Link></li> */}
               </ul>
             </div>
           </div>
